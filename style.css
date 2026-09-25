@@ -1,0 +1,213 @@
+/* Основні налаштування */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Навігаційне меню */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4f46e5;
+}
+
+/* 1. Hero Section (Головний екран) */
+.hero {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .utp {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn.primary {
+    background: #ffffff;
+    color: #4f46e5;
+}
+
+.btn.secondary {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Спільні стилі для секцій */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+h2 {
+    color: #1e293b;
+    border-bottom: 3px solid #6366f1;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 1.5rem;
+}
+
+/* 2. Навички */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.skills-list li {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* 3. Картки проєктів та послуг */
+.case-card, .service-card {
+    border-left: 4px solid #4f46e5;
+    background: #f8fafc;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.case-card:hover, .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.price {
+    font-weight: 700;
+    color: #059669;
+    margin-top: 0.5rem;
+}
+
+/* 5. Відгуки */
+.testimonial {
+    background: #f1f5f9;
+    border-left: 5px solid #8b5cf6;
+    padding: 1rem 1.5rem;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #64748b;
+}
+
+/* 6. Підвал та Контакти */
+.contact-links {
+    list-style: none;
+}
+
+.contact-links li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-links a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Анімація появи */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
