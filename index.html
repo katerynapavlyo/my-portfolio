@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Катерина Павльо — Front-end Розробниця</title>
     <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
 </head>
 <body>
     <nav>
@@ -74,6 +76,66 @@
                     <p class="price">Ціна: за домовленістю</p>
                 </div>
             </div>
+        </section>
+        <section id="order" class="order-section">
+        <div class="container">
+            <div class="order-card">
+            <div class="order-header">
+                <h2>Замовити послугу</h2>
+                <p>Заповніть форму, і я зв'яжуся з вами протягом робочого дня для обговорення деталей вашого проєкту.</p>
+            </div>
+            <form class="order-form" id="orderForm" novalidate>
+                <!-- Поле: Ім'я -->
+                <div class="form-group">
+                <label for="orderName">Ваше ім'я <span class="required">*</span></label>
+                <input 
+                    type="text" 
+                    id="orderName" 
+                    name="name" 
+                    placeholder="Олександр" 
+                    required
+                >
+                <span class="error-message">Будь ласка, вкажіть ваше ім'я</span>
+                </div>
+                <div class="form-group">
+                <label for="orderContact">Email або Telegram <span class="required">*</span></label>
+                <input 
+                    type="text" 
+                    id="orderContact" 
+                    name="contact" 
+                    placeholder="@username або email@gmail.com" 
+                    required
+                >
+                <span class="error-message">Вкажіть зручний спосіб зв'язку</span>
+                </div>
+                <div class="form-group">
+                <label for="serviceType">Оберіть послугу <span class="required">*</span></label>
+                <select id="serviceType" name="service" required>
+                    <option value="" disabled selected>Оберіть потрібну послугу...</option>
+                    <option value="landing">Верстка сайтів під ключ (від $100)</option>
+                    <option value="redesign">Адаптація та Редизайн</option>
+                    <option value="consultation">Консультація / Інше</option>
+                </select>
+                <span class="error-message">Будь ласка, оберіть послугу зі списку</span>
+                </div>
+                <div class="form-group">
+                <label for="projectDetails">Опис проєкту або посилання на макет</label>
+                <textarea 
+                    id="projectDetails" 
+                    name="details" 
+                    rows="4" 
+                    placeholder="Коротко опишіть завдання або вставте посилання на макет у Figma..."
+                ></textarea>
+                </div>
+                <button type="submit" class="btn-submit" id="submitBtn">
+                <span>Надіслати заявку</span>
+                </button>
+                <div class="form-success-message" id="successMessage">
+                Дякую! Заявку успішно відправлено. Я зв'яжуся з вами найближчим часом.
+                </div>
+            </form>
+            </div>
+        </div>
         </section>
         <section id="testimonials">
             <h2>Відгуки</h2>
