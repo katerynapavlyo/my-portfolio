@@ -207,7 +207,6 @@ footer {
   padding: 60px 20px;
   background-color: #f8f9fa;
 }
-
 .order-card {
   max-width: 650px;
   margin: 0 auto;
@@ -217,14 +216,12 @@ footer {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   border: 1px solid #eef0f4;
 }
-
 .order-header h2 {
   color: #4a3aff;
   font-size: 2rem;
   margin-bottom: 12px;
   text-align: center;
 }
-
 .order-header p {
   color: #6c757d;
   font-size: 0.95rem;
@@ -237,6 +234,8 @@ footer {
   margin-bottom: 22px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .form-group label {
@@ -272,12 +271,10 @@ footer {
   border-color: #4a3aff;
   box-shadow: 0 0 0 4px rgba(74, 58, 255, 0.12);
 }
-
 .form-group input.invalid,
 .form-group select.invalid {
   border-color: #e63946;
 }
-
 .error-message {
   display: none;
   color: #e63946;
@@ -289,6 +286,7 @@ footer {
   display: block;
 }
 
+/* Стилі кнопки */
 .btn-submit {
   width: 100%;
   padding: 14px 20px;
@@ -299,16 +297,12 @@ footer {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.1s ease;
+  transition: background-color 0.3s ease;
   margin-top: 10px;
 }
 
 .btn-submit:hover {
   background-color: #3525cc;
-}
-
-.btn-submit:active {
-  transform: scale(0.99);
 }
 
 .form-success-message {
@@ -321,13 +315,4 @@ footer {
   text-align: center;
   font-size: 0.95rem;
   font-weight: 500;
-}
-@media (max-width: 576px) {
-  .order-card {
-    padding: 25px 18px;
-  }
-
-  .order-header h2 {
-    font-size: 1.6rem;
-  }
 }
